@@ -1,5 +1,6 @@
 A template project will use [expressjs](http://expressjs.com/) as backend
-and [ReactJS-AdminLTE](https://github.com/booleanhunter/ReactJS-AdminLTE) as frontend.
+and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme.
+>I have try [ReactJS-AdminLTE](https://github.com/booleanhunter/ReactJS-AdminLTE), but it did not work in this project.
 
 This project is based on [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
@@ -15,6 +16,7 @@ build run ```yarn run build -- --release```
 More usage refer to [react-starter-kit start guid](https://github.com/kriasoft/react-starter-kit/blob/master/docs/getting-started.md) and [doc list](https://github.com/kriasoft/react-starter-kit/tree/master/docs)
 
 ## Define client side navigate page
+see src/routes/index.js  
 in folder src/routes define page with the page name as a subfolder, need a index.js as a main script and include the component under the same folder or in the component folder do the rendering.
 
 ## Define React Component

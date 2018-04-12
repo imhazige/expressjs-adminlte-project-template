@@ -10,26 +10,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './LteSimple.css';
 
-// external-global styles must be imported in your JS.
-import normalizeCss from 'normalize.css';
-// import s from './AdminLayout.css';
-
-// import reactjsAdminlte from 'adminlte-reactjs';
-
-class Layout extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-  };
+class LteSimple extends React.Component {
+  // static propTypes = {
+  //   title: PropTypes.string.isRequired,
+  // };
 
   render() {
     return (
-      <div>
-        {this.props.children}
+      <div className={s.root}>
+        ssss
       </div>
     );
   }
 }
 
-// export default withStyles(normalizeCss, s)(Layout);
-export default withStyles(normalizeCss)(Layout);
+export default withStyles(s)(LteSimple);

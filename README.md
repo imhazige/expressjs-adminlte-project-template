@@ -33,6 +33,11 @@ connect with [sequelize](http://docs.sequelizejs.com/) src/data/sequelize.js
 sequelize model defined under src/data/models
 
 
+## Problems need take care
+
+## import css in css will have problem if there are relative resource.
+instead, you should import css from js
+
 
 
 

@@ -13,7 +13,8 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
-// import s from './AdminLayout.css';
+import s from './AdminLayout.css';
+import ss from 'admin-lte/dist/css/AdminLTE.css';
 
 // import reactjsAdminlte from 'adminlte-reactjs';
 
@@ -31,5 +32,5 @@ class Layout extends React.Component {
   }
 }
 
-// export default withStyles(normalizeCss, s)(Layout);
-export default withStyles(normalizeCss)(Layout);
+export default withStyles(normalizeCss, ss)(Layout);
+// export default withStyles(normalizeCss)(Layout);

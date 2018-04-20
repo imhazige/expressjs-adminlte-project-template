@@ -10,6 +10,7 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
+import userimg from './logo-small.png';
 
 class Navigation extends React.Component {
   render() {
@@ -45,9 +46,9 @@ class Navigation extends React.Component {
                       {/* <!-- start message --> */}
                       <a href="#">
                         <div className="pull-left">
-                          <my
-                            src="~/assets/my/user2-160x160.jpg"
-                            className="my-circle"
+                          <img
+                            src={userimg}
+                            className="img-circle"
                             alt="User Image"
                           />
                         </div>
@@ -135,8 +136,8 @@ class Navigation extends React.Component {
             {/* <!-- User Account: style can be found in dropdown.less --> */}
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <my
-                  src="~/assets/my/user2-160x160.jpg"
+                <img
+                  src={userimg}
                   className="user-image"
                   alt="User Image"
                 />
@@ -145,9 +146,9 @@ class Navigation extends React.Component {
               <ul className="dropdown-menu">
                 {/* <!-- User image --> */}
                 <li className="user-header">
-                  <my
-                    src="~/assets/my/user2-160x160.jpg"
-                    className="my-circle"
+                  <img
+                    src="/img/logo-small@2x.png"
+                    className="img-circle"
                     alt="User Image"
                   />
 

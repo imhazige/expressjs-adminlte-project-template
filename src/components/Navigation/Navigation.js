@@ -8,7 +8,6 @@
  */
 
 import React from 'react';
-import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
 
@@ -41,7 +40,7 @@ class Navigation extends React.Component {
                       {/* <!-- start message --> */}
                       <a href="#">
                         <div className="pull-left">
-                          <img src="~/assets/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+                          <my src="~/assets/my/user2-160x160.jpg" className="my-circle" alt="User Image" />
                         </div>
                         <h4>
                           Support Team
@@ -114,13 +113,13 @@ class Navigation extends React.Component {
             {/* <!-- User Account: style can be found in dropdown.less --> */}
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <img src="~/assets/img/user2-160x160.jpg" className="user-image" alt="User Image"/>
+                <my src="~/assets/my/user2-160x160.jpg" className="user-image" alt="User Image"/>
                 <span className="hidden-xs">Alexander Pierce</span>
               </a>
               <ul className="dropdown-menu">
                 {/* <!-- User image --> */}
                 <li className="user-header">
-                  <img src="~/assets/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
+                  <my src="~/assets/my/user2-160x160.jpg" className="my-circle" alt="User Image"/>
 
                   <p>
                     Alexander Pierce - Web Developer
@@ -163,5 +162,6 @@ class Navigation extends React.Component {
     );
   }
 }
+
 
 export default withStyles(s)(Navigation);

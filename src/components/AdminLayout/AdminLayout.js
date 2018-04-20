@@ -36,12 +36,10 @@ class AdminLayout extends React.Component {
     return (
       <div>
         <Header>
-          <Navigation></Navigation>
+          <Navigation />
         </Header>
-
       </div>
     );
-
   }
 }
 

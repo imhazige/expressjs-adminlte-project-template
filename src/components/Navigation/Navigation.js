@@ -16,11 +16,16 @@ class Navigation extends React.Component {
     return (
       <nav className="navbar navbar-static-top">
         {/* <!-- Sidebar toggle button--> */}
-        <a href="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
+        <a
+          href="#"
+          className="sidebar-toggle"
+          data-toggle="push-menu"
+          role="button"
+        >
           <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
+          <span className="icon-bar" />
+          <span className="icon-bar" />
+          <span className="icon-bar" />
         </a>
 
         <div className="navbar-custom-menu">
@@ -28,7 +33,7 @@ class Navigation extends React.Component {
             {/* <!-- Messages: style can be found in dropdown.less--> */}
             <li className="dropdown messages-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <i className="fa fa-envelope-o"></i>
+                <i className="fa fa-envelope-o" />
                 <span className="label label-success">4</span>
               </a>
               <ul className="dropdown-menu">
@@ -40,11 +45,17 @@ class Navigation extends React.Component {
                       {/* <!-- start message --> */}
                       <a href="#">
                         <div className="pull-left">
-                          <my src="~/assets/my/user2-160x160.jpg" className="my-circle" alt="User Image" />
+                          <my
+                            src="~/assets/my/user2-160x160.jpg"
+                            className="my-circle"
+                            alt="User Image"
+                          />
                         </div>
                         <h4>
                           Support Team
-                          <small><i className="fa fa-clock-o"></i> 5 mins</small>
+                          <small>
+                            <i className="fa fa-clock-o" /> 5 mins
+                          </small>
                         </h4>
                         <p>Why not buy a new awesome theme?</p>
                       </a>
@@ -52,13 +63,15 @@ class Navigation extends React.Component {
                     {/* <!-- end message --> */}
                   </ul>
                 </li>
-                <li className="footer"><a href="#">See All Messages</a></li>
+                <li className="footer">
+                  <a href="#">See All Messages</a>
+                </li>
               </ul>
             </li>
             {/* <!-- Notifications: style can be found in dropdown.less --> */}
             <li className="dropdown notifications-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <i className="fa fa-bell-o"></i>
+                <i className="fa fa-bell-o" />
                 <span className="label label-warning">10</span>
               </a>
               <ul className="dropdown-menu">
@@ -68,18 +81,21 @@ class Navigation extends React.Component {
                   <ul className="menu">
                     <li>
                       <a href="#">
-                        <i className="fa fa-users text-aqua"></i> 5 new members joined today
+                        <i className="fa fa-users text-aqua" /> 5 new members
+                        joined today
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li className="footer"><a href="#">View all</a></li>
+                <li className="footer">
+                  <a href="#">View all</a>
+                </li>
               </ul>
             </li>
             {/* <!-- Tasks: style can be found in dropdown.less --> */}
             <li className="dropdown tasks-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <i className="fa fa-flag-o"></i>
+                <i className="fa fa-flag-o" />
                 <span className="label label-danger">9</span>
               </a>
               <ul className="dropdown-menu">
@@ -95,8 +111,14 @@ class Navigation extends React.Component {
                           <small className="pull-right">20%</small>
                         </h3>
                         <div className="progress xs">
-                          <div className="progress-bar progress-bar-aqua" style={{width:'20%'}} role="progressbar"
-                               aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <div
+                            className="progress-bar progress-bar-aqua"
+                            style={{ width: '20%' }}
+                            role="progressbar"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
                             <span className="sr-only">20% Complete</span>
                           </div>
                         </div>
@@ -113,13 +135,21 @@ class Navigation extends React.Component {
             {/* <!-- User Account: style can be found in dropdown.less --> */}
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <my src="~/assets/my/user2-160x160.jpg" className="user-image" alt="User Image"/>
+                <my
+                  src="~/assets/my/user2-160x160.jpg"
+                  className="user-image"
+                  alt="User Image"
+                />
                 <span className="hidden-xs">Alexander Pierce</span>
               </a>
               <ul className="dropdown-menu">
                 {/* <!-- User image --> */}
                 <li className="user-header">
-                  <my src="~/assets/my/user2-160x160.jpg" className="my-circle" alt="User Image"/>
+                  <my
+                    src="~/assets/my/user2-160x160.jpg"
+                    className="my-circle"
+                    alt="User Image"
+                  />
 
                   <p>
                     Alexander Pierce - Web Developer
@@ -144,17 +174,23 @@ class Navigation extends React.Component {
                 {/* <!-- Menu Footer--> */}
                 <li className="user-footer">
                   <div className="pull-left">
-                    <a href="#" className="btn btn-default btn-flat">Profile</a>
+                    <a href="#" className="btn btn-default btn-flat">
+                      Profile
+                    </a>
                   </div>
                   <div className="pull-right">
-                    <a href="#" className="btn btn-default btn-flat">Sign out</a>
+                    <a href="#" className="btn btn-default btn-flat">
+                      Sign out
+                    </a>
                   </div>
                 </li>
               </ul>
             </li>
             {/* <!-- Control Sidebar Toggle Button --> */}
             <li>
-              <a href="#" data-toggle="control-sidebar"><i className="fa fa-gears"></i></a>
+              <a href="#" data-toggle="control-sidebar">
+                <i className="fa fa-gears" />
+              </a>
             </li>
           </ul>
         </div>
@@ -162,6 +198,5 @@ class Navigation extends React.Component {
     );
   }
 }
-
 
 export default withStyles(s)(Navigation);

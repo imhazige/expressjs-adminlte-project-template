@@ -48,4 +48,7 @@ instead, you should import css from js
 
 ## comment style in css file will cause show css imported from js as content
 
-for example /_ <style src="bootstrap/dist/css/bootstrap.css"></style> _/
+for example /* <style src="bootstrap/dist/css/bootstrap.css"></style> */
+
+## can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
+it try to resolve the react from its own dependency - 'ERROR in ./node_modules/adminlte-reactjs/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js'

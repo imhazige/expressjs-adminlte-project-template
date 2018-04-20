@@ -24,7 +24,7 @@ import s from './AdminLayout.css';
 
 // import ss6 from '../fonts/fonts.css';
 
-// import reactjsAdminlte from 'adminlte-reactjs';
+import Header from '../Header';
 
 class AdminLayout extends React.Component {
   static propTypes = {
@@ -32,7 +32,7 @@ class AdminLayout extends React.Component {
   };
 
   render() {
-    return <div>{this.props.children}</div>;
+    return <Header>{this.props.children}</Header>;
   }
 }
 

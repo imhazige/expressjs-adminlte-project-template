@@ -13,24 +13,30 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
+
+import ss1 from 'font-awesome/css/font-awesome.css';
+import ss2 from 'ionicons/dist/css/ionicons.css';
+import ss3 from 'bootstrap/dist/css/bootstrap.css';
+import ss4 from 'admin-lte/dist/css/AdminLTE.css';
+import ss5 from 'admin-lte/dist/css/skins/skin-blue.min.css';
+
 import s from './AdminLayout.css';
-import ss from 'admin-lte/dist/css/AdminLTE.css';
+
+// import ss6 from '../fonts/fonts.css';
 
 // import reactjsAdminlte from 'adminlte-reactjs';
 
-class Layout extends React.Component {
+class AdminLayout extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
   };
 
   render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
+    return <div>{this.props.children}</div>;
   }
 }
 
-export default withStyles(normalizeCss, ss)(Layout);
+export default withStyles(normalizeCss, s, ss1, ss2, ss3, ss4, ss5)(
+  AdminLayout,
+);
 // export default withStyles(normalizeCss)(Layout);

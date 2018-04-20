@@ -18,11 +18,7 @@ class LteSimple extends React.Component {
   // };
 
   render() {
-    return (
-      <div className={s.root}>
-        ssss
-      </div>
-    );
+    return <div className={s.root}>ssss</div>;
   }
 }
 

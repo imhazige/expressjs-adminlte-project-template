@@ -136,11 +136,7 @@ class Navigation extends React.Component {
             {/* <!-- User Account: style can be found in dropdown.less --> */}
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <img
-                  src={userimg}
-                  className="user-image"
-                  alt="User Image"
-                />
+                <img src={userimg} className="user-image" alt="User Image" />
                 <span className="hidden-xs">Alexander Pierce</span>
               </a>
               <ul className="dropdown-menu">

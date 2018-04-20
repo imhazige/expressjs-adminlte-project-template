@@ -13,6 +13,6 @@
  * then it will be inlined and processed with CSS modules.
  */
 
-.some {
-  color: blue;
+.layout {
+  height: 100%;
 }

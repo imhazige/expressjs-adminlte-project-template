@@ -57,7 +57,7 @@ class Html extends React.Component {
             />
           ))}
         </head>
-        <body>
+        <body className="hold-transition skin-blue sidebar-mini">
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}

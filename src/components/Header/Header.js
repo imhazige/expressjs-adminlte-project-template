@@ -11,19 +11,22 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 
-
 class Header extends React.Component {
   render() {
     return (
       <header className="main-header">
-          {/* <!-- Logo --> */}
-          <a to="/login" className="logo">
-              {/* <!-- mini logo for sidebar mini 50x50 pixels --> */}
-              <span className="logo-mini"><b>A</b>LT</span>
-              {/* <!-- logo for regular state and mobile devices --> */}
-              <span className="logo-lg"><b>Admin</b>LTE</span>
-          </a>
-          {this.props.children}
+        {/* <!-- Logo --> */}
+        <a to="/login" className="logo">
+          {/* <!-- mini logo for sidebar mini 50x50 pixels --> */}
+          <span className="logo-mini">
+            <b>A</b>LT
+          </span>
+          {/* <!-- logo for regular state and mobile devices --> */}
+          <span className="logo-lg">
+            <b>Admin</b>LTE
+          </span>
+        </a>
+        {this.props.children}
       </header>
     );
   }

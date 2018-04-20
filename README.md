@@ -48,7 +48,34 @@ instead, you should import css from js
 
 ## comment style in css file will cause show css imported from js as content
 
-for example /* <style src="bootstrap/dist/css/bootstrap.css"></style> */
+for example /_ <style src="bootstrap/dist/css/bootstrap.css"></style> _/
 
 ## can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
+
 it try to resolve the react from its own dependency - 'ERROR in ./node_modules/adminlte-reactjs/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js'
+
+## html component used in server.js to handle many pages like error
+
+so becareful when you think you need change the html component. or if you should consider deffiernt html for different page
+if you want load different resource.
+
+## resource load
+you can import image directly like
+```javascript
+import userimg from './logo-small.png';
+<img
+  src={userimg}
+  className="img-circle"
+  alt="User Image"
+/>
+```
+or put the image under the public folder which will be accessabile via path "/"
+
+you can load css directly via css loader
+```javascript
+import s from './Navigation.css';
+<div className={s.someclass}>
+export default withStyles(s)(Navigation);
+```
+if the parent component have import the css, you can use the class name directly.
+

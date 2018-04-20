@@ -26,24 +26,31 @@ import s from './AdminLayout.css';
 
 import Header from '../Header';
 import Navigation from '../Navigation';
+import Sidebar from '../Sidebar';
 
 class AdminLayout extends React.Component {
   static propTypes = {
     // children: PropTypes.node.isRequired,
   };
 
+  componentDidMount() {
+    // refer to https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+    document.body.classList.add('hold-transition', 'skin-blue', 'sidebar-mini');
+  }
+
   render() {
     return (
-      <div>
+      <div className={s.layout}>
         <Header>
           <Navigation />
         </Header>
+        <Sidebar/>
       </div>
     );
   }
 }
 
-export default withStyles(normalizeCss, s, ss1, ss2, ss3, ss4, ss5)(
+export default withStyles(normalizeCss, ss1, ss2, ss3, ss4, ss5, s)(
   AdminLayout,
 );
 // export default withStyles(normalizeCss)(Layout);

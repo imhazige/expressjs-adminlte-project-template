@@ -25,14 +25,23 @@ import s from './AdminLayout.css';
 // import ss6 from '../fonts/fonts.css';
 
 import Header from '../Header';
+import Navigation from '../Navigation';
 
 class AdminLayout extends React.Component {
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    // children: PropTypes.node.isRequired,
   };
 
   render() {
-    return <Header>{this.props.children}</Header>;
+    return (
+      <div>
+        <Header>
+          <Navigation></Navigation>
+        </Header>
+
+      </div>
+    );
+
   }
 }
 

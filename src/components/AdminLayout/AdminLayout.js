@@ -27,6 +27,7 @@ import s from './AdminLayout.css';
 import Header from '../Header';
 import Navigation from '../Navigation';
 import Sidebar from '../Sidebar';
+import Footer from '../Footer';
 
 class AdminLayout extends React.Component {
   static propTypes = {
@@ -36,6 +37,7 @@ class AdminLayout extends React.Component {
   componentDidMount() {
     // refer to https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
     document.body.classList.add('hold-transition', 'skin-blue', 'sidebar-mini');
+    // document.getElementById('app').classList.add(s['app-apend']);
   }
 
   render() {
@@ -44,7 +46,9 @@ class AdminLayout extends React.Component {
         <Header>
           <Navigation />
         </Header>
-        <Sidebar/>
+        <Sidebar />
+        {this.props.children}
+        <Footer />
       </div>
     );
   }

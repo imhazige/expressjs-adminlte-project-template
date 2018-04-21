@@ -84,6 +84,7 @@
     "glob": "^7.1.2",
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
+    "imports-loader": "^0.8.0",
     "jest": "^22.4.3",
     "lint-staged": "^7.0.4",
     "markdown-it": "^8.4.1",

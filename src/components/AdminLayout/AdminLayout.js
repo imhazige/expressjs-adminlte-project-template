@@ -22,8 +22,14 @@ import ss5 from 'admin-lte/dist/css/skins/skin-blue.min.css';
 
 import s from './AdminLayout.css';
 
-// import boostrap from 'bootstrap/dist/js/bootstrap.min.js';
-// import ltejs from 'admin-lte/dist/js/adminlte.min.js';
+// import { $, jQuery } from 'jquery';
+// import jQuery from 'jquery';
+// export for others scripts to use
+
+require('imports-loader?$=jquery!bootstrap');
+require('imports-loader?$=jquery!admin-lte');
+// import boostrap from 'bootstrap';
+// import ltejs from 'admin-lte';
 
 // import ss6 from '../fonts/fonts.css';
 
@@ -31,6 +37,13 @@ import Header from '../Header';
 import Navigation from '../Navigation';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
+
+function appendScript(src, onload) {
+  const s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.onload = onload;
+  s.src = onload;
+}
 
 class AdminLayout extends React.Component {
   static propTypes = {
@@ -41,6 +54,7 @@ class AdminLayout extends React.Component {
     // refer to https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
     document.body.classList.add('hold-transition', 'skin-blue', 'sidebar-mini');
     // document.getElementById('app').classList.add(s['app-apend']);
+    // appendScript('');
   }
 
   render() {

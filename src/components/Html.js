@@ -49,6 +49,7 @@ class Html extends React.Component {
           ))}
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="apple-touch-icon" href="/icon.png" />
+
           {styles.map(style => (
             <style
               key={style.id}
@@ -62,6 +63,7 @@ class Html extends React.Component {
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
           />
+
           {scripts.map(script => <script key={script} src={script} />)}
           {config.analytics.googleTrackingId && (
             <script

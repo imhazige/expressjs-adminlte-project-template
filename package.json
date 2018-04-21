@@ -6,12 +6,7 @@
     "node": ">=6.13.1",
     "npm": ">=3.10.10"
   },
-  "browserslist": [
-    ">1%",
-    "last 4 versions",
-    "Firefox ESR",
-    "not ie < 9"
-  ],
+  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
   "dependencies": {
     "@babel/polyfill": "^7.0.0-beta.44",
     "admin-lte": "^2.4.3",
@@ -84,7 +79,6 @@
     "glob": "^7.1.2",
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
-    "imports-loader": "^0.8.0",
     "jest": "^22.4.3",
     "lint-staged": "^7.0.4",
     "markdown-it": "^8.4.1",
@@ -128,18 +122,9 @@
     "webpack-node-externals": "^1.7.2"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --no-ignore --fix",
-      "git add --force"
-    ],
-    "*.{json,md,graphql}": [
-      "prettier --write",
-      "git add --force"
-    ],
-    "*.{css,less,styl,scss,sass,sss}": [
-      "stylelint --fix",
-      "git add --force"
-    ]
+    "*.{js,jsx}": ["eslint --no-ignore --fix", "git add --force"],
+    "*.{json,md,graphql}": ["prettier --write", "git add --force"],
+    "*.{css,less,styl,scss,sass,sss}": ["stylelint --fix", "git add --force"]
   },
   "scripts": {
     "precommit": "lint-staged",

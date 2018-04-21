@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 A template project will use [expressjs](http://expressjs.com/) as backend
 and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme.
 
@@ -41,25 +42,33 @@ sequelize model defined under src/data/models
 
 ## Problems need take care
 
-## import css in css will have problem if there are relative resource.
+### error "Please install sqlite3 package manually"
+
+run
+
+```shell
+yarn add sqlite3
+```
+
+### import css in css will have problem if there are relative resource.
 
 If you import external CSS file from your internal CSS then it will be inlined and processed with CSS modules.
 instead, you should import css from js
 
-## comment style in css file will cause show css imported from js as content
+### comment style in css file will cause show css imported from js as content
 
 for example /_ <style src="bootstrap/dist/css/bootstrap.css"></style> _/
 
-## can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
+### can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
 
 it try to resolve the react from its own dependency - 'ERROR in ./node_modules/adminlte-reactjs/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js'
 
-## html component used in server.js to handle many pages like error
+### html component used in server.js to handle many pages like error
 
 so be careful when you think you need change the html component. or if you should consider deffiernt html for different page
 if you want load different resource.
 
-## resource load
+### resource load
 
 you can import image directly like
 

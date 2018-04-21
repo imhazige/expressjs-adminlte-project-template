@@ -6,6 +6,8 @@ and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme.
 
 This project is based on [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
+![](./snapshot.png)
+
 ## Usage:
 
 clone from github
@@ -17,6 +19,10 @@ release run `yarn start -- --release`
 build run `yarn run build -- --release`
 
 More usage refer to [react-starter-kit start guid](https://github.com/kriasoft/react-starter-kit/blob/master/docs/getting-started.md) and [doc list](https://github.com/kriasoft/react-starter-kit/tree/master/docs)
+
+## AdminLayout
+
+see the example page: [lte-test](./src/routes/lte-test/index.js)
 
 ## Define client side navigate page
 

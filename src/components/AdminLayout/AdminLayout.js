@@ -22,6 +22,9 @@ import ss5 from 'admin-lte/dist/css/skins/skin-blue.min.css';
 
 import s from './AdminLayout.css';
 
+// import boostrap from 'bootstrap/dist/js/bootstrap.min.js';
+// import ltejs from 'admin-lte/dist/js/adminlte.min.js';
+
 // import ss6 from '../fonts/fonts.css';
 
 import Header from '../Header';

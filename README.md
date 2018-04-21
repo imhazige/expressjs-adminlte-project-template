@@ -56,26 +56,28 @@ it try to resolve the react from its own dependency - 'ERROR in ./node_modules/a
 
 ## html component used in server.js to handle many pages like error
 
-so becareful when you think you need change the html component. or if you should consider deffiernt html for different page
+so be careful when you think you need change the html component. or if you should consider deffiernt html for different page
 if you want load different resource.
 
 ## resource load
+
 you can import image directly like
+
+you can import old style js like bootstrap directly like `javascript import boostrap from 'bootstrap/dist/js/bootstrap.min.js';`
+
 ```javascript
 import userimg from './logo-small.png';
-<img
-  src={userimg}
-  className="img-circle"
-  alt="User Image"
-/>
+<img src={userimg} className="img-circle" alt="User Image" />;
 ```
+
 or put the image under the public folder which will be accessabile via path "/"
 
 you can load css directly via css loader
+
 ```javascript
 import s from './Navigation.css';
 <div className={s.someclass}>
 export default withStyles(s)(Navigation);
 ```
-if the parent component have import the css, you can use the class name directly.
 
+class imported from modules is able to refer to class name directly.

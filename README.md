@@ -85,8 +85,6 @@ if you want load different resource.
 
 you can import image directly like
 
-you can import old style js like bootstrap directly like `javascript import boostrap from 'bootstrap/dist/js/bootstrap.min.js';`
-
 ```javascript
 import userimg from './logo-small.png';
 <img src={userimg} className="img-circle" alt="User Image" />;

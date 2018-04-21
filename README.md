@@ -1,4 +1,5 @@
-<!-- prettier-ignore -->
+<!-- prettier-disable -->
+
 A template project will use [expressjs](http://expressjs.com/) as backend
 and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme.
 
@@ -11,10 +12,15 @@ This project is based on [react-starter-kit](https://github.com/kriasoft/react-s
 ## Usage:
 
 clone from github
-`git clone https://github.com/imhazige/expressjs-adminlte-project-template.git`
+```
+git clone https://github.com/imhazige/expressjs-adminlte-project-template.git
+```
 install yarn if need `npm install --global yarn`
+
 cd to the folder
+
 develop run `yarn start`
+
 release run `yarn start -- --release`
 build run `yarn run build -- --release`
 
@@ -27,6 +33,7 @@ see the example page: [lte-test](./src/routes/lte-test/index.js)
 ## Define client side navigate page
 
 see src/routes/index.js
+
 in folder src/routes define page with the page name as a subfolder, need a index.js as a main script and include the component under the same folder or in the component folder do the rendering.
 
 ## Define React Component

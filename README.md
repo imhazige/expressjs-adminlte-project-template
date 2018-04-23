@@ -36,7 +36,7 @@ in folder src/routes define page with the page name as a subfolder, need a index
 
 ## Define React Component
 
-in folder [src/component](src/component), define a component with a named folder, must include a package.json
+in folder src/components(src/components), define a component with a named folder, must include a package.json
 
 ## Static assets
 
@@ -44,7 +44,7 @@ in folder public
 
 ## Server side config
 
-in the code src/config.js
+in the code [src/config.js](src/config.js)
 
 ## Database
 

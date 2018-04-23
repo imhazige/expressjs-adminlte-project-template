@@ -3,8 +3,6 @@
 A full-stack boilerplate template project will use [expressjs](http://expressjs.com/) as backend
 and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme. react as front-end
 
-> I have try [ReactJS-AdminLTE](https://github.com/booleanhunter/ReactJS-AdminLTE), but it did not work in this project. it try to import another react again.
-
 This project is based on [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 
 ![](./snapshot.png)

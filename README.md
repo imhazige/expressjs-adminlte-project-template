@@ -1,7 +1,7 @@
 <!-- prettier-disable -->
 
-A template project will use [expressjs](http://expressjs.com/) as backend
-and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme.
+A full-stack boilerplate template project will use [expressjs](http://expressjs.com/) as backend
+and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme. react as front-end
 
 > I have try [ReactJS-AdminLTE](https://github.com/booleanhunter/ReactJS-AdminLTE), but it did not work in this project. it try to import another react again.
 
@@ -28,17 +28,17 @@ More usage refer to [react-starter-kit start guid](https://github.com/kriasoft/r
 
 ## AdminLayout
 
-see the example page: [lte-test](./src/routes/lte-test/index.js)
+see the example page: [lte-test]    (./src/routes/lte-test/index.js)
 
 ## Define client side navigate page
 
-see src/routes/index.js
+see [src/routes/index.js](src/routes/index.js)
 
 in folder src/routes define page with the page name as a subfolder, need a index.js as a main script and include the component under the same folder or in the component folder do the rendering.
 
 ## Define React Component
 
-in folder src/component, define a component with a named folder, must include a package.json
+in folder [src/component](src/component), define a component with a named folder, must include a package.json
 
 ## Static assets
 

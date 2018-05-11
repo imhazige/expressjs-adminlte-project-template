@@ -17,6 +17,8 @@ install yarn if need `npm install --global yarn`
 
 cd to the folder
 
+run `yarn install`
+
 develop run `yarn start`
 
 release run `yarn start -- --release`

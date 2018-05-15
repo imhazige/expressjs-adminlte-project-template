@@ -22,7 +22,11 @@ run `yarn install`
 develop run `yarn start`
 
 release run `yarn start -- --release`
-build run `yarn run build -- --release`
+
+build run `yarn run build -- --release`, then `node build/server.js`
+
+### note:
+- the config PORT only work for built running like `node build/server.js`
 
 More usage refer to [react-starter-kit start guid](https://github.com/kriasoft/react-starter-kit/blob/master/docs/getting-started.md) and [doc list](https://github.com/kriasoft/react-starter-kit/tree/master/docs)
 
@@ -52,6 +56,18 @@ in the code [src/config.js](src/config.js)
 
 connect with [sequelize](http://docs.sequelizejs.com/) src/data/sequelize.js
 sequelize model defined under src/data/models
+
+normally you need not remove the User... Models, as the passort code depend on it.
+
+### [Sync all defined models to the DB](http://docs.sequelizejs.com/class/lib/sequelize.js~Sequelize.html#instance-method-sync)
+see <src/data/models/index.js>
+
+## Server API middleware
+see <src/api/index.js>
+
+## Logging
+using [log4js](https://github.com/log4js-node/log4js-node)
+see <src/common/log.js>, config is in the <src/config.js>
 
 ## Problems need take care
 
@@ -101,3 +117,15 @@ export default withStyles(s)(Navigation);
 ```
 
 class imported from modules is able to refer to class name directly.
+
+### ajax request
+```javascript
+import fetch from 'node-fetch';
+
+fetch(url)
+      .then(res => res.json())
+      .then(json => {
+
+      })
+      .catch(err => {});
+```

@@ -68,4 +68,11 @@ module.exports = {
         'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ',
     },
   },
+  // logging of log4js
+  logging: {
+    filename: 'app.log',
+    level: 'debug',
+    backups: 10,
+    maxLogSize: 10485760,
+  },
 };

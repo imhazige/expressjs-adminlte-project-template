@@ -69,34 +69,6 @@ see <src/api/index.js>
 using [log4js](https://github.com/log4js-node/log4js-node)
 see <src/common/log.js>, config is in the <src/config.js>
 
-## Problems need take care
-
-### error "Please install sqlite3 package manually"
-
-run
-
-```shell
-yarn add sqlite3
-```
-
-### import css in css will have problem if there are relative resource.
-
-If you import external CSS file from your internal CSS then it will be inlined and processed with CSS modules.
-instead, you should import css from js
-
-### comment style in css file will cause show css imported from js as content
-
-for example /_ <style src="bootstrap/dist/css/bootstrap.css"></style> _/
-
-### can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
-
-it try to resolve the react from its own dependency - 'ERROR in ./node_modules/adminlte-reactjs/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js'
-
-### html component used in server.js to handle many pages like error
-
-so be careful when you think you need change the html component. or if you should consider deffiernt html for different page
-if you want load different resource.
-
 ### resource load
 
 you can import image directly like
@@ -129,3 +101,40 @@ fetch(url)
       })
       .catch(err => {});
 ```
+
+## Problems need take care
+
+### error "Please install sqlite3 package manually"
+
+run
+
+```shell
+yarn add sqlite3
+```
+
+### import css in css will have problem if there are relative resource.
+
+If you import external CSS file from your internal CSS then it will be inlined and processed with CSS modules.
+instead, you should import css from js
+
+### comment style in css file will cause show css imported from js as content
+
+for example /_ <style src="bootstrap/dist/css/bootstrap.css"></style> _/
+
+### can not use [adminlte react](https://github.com/booleanhunter/ReactJS-AdminLTE) directly
+
+it try to resolve the react from its own dependency - 'ERROR in ./node_modules/adminlte-reactjs/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js'
+
+### html component used in server.js to handle many pages like error
+
+so be careful when you think you need change the html component. or if you should consider deffiernt html for different page
+if you want load different resource.
+
+### decoratorsLegacy problem
+look into this pull, https://github.com/kriasoft/react-starter-kit/pull/1608/files, add these two lines to coresponding code if you encountered these problem.
+
+
+
+
+
+

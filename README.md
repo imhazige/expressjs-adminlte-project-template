@@ -1,6 +1,6 @@
 <!-- prettier-disable -->
 
-A full-stack boilerplate template project will use [expressjs](http://expressjs.com/) as backend
+A full-stack boilerplate template project using [expressjs](http://expressjs.com/) as backend
 and [AdminLTE](https://github.com/almasaeed2010/AdminLTE/) as theme. react as front-end
 
 This project is based on [react-starter-kit](https://github.com/kriasoft/react-starter-kit)

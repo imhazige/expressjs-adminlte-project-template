@@ -31,9 +31,12 @@ import schema from './data/schema';
 // import assets from './asset-manifest.json'; // eslint-disable-line import/no-unresolved
 import chunks from './chunk-manifest.json'; // eslint-disable-line import/no-unresolved
 import config from './config';
+import log from './common/log';
+import apiRoutes from 'api/index';
 
 process.on('unhandledRejection', (reason, p) => {
   console.error('Unhandled Rejection at:', p, 'reason:', reason);
+  log.error('Unhandled Rejection at:', p, 'reason:', reason);
   // send entire app down. Process manager will restart it
   process.exit(1);
 });
@@ -117,6 +120,12 @@ app.use(
     pretty: __DEV__,
   })),
 );
+
+//
+// Register RESTful API
+// -----------------------------------------------------------------------------
+apiRoutes(app);
+log.info('api loaded...');
 
 //
 // Register server-side rendering middleware

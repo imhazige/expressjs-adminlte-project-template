@@ -67,7 +67,7 @@ see <src/api/index.js>
 
 ## Logging
 using [log4js](https://github.com/log4js-node/log4js-node)
-see <src/common/log.js>, config is in the <src/config.js>
+see <./src/common/log.js>, config is in the <./src/config.js>
 
 ### resource load
 
@@ -101,6 +101,14 @@ fetch(url)
       })
       .catch(err => {});
 ```
+
+### Unit Test
+
+###$ API Test
+see <./test/api/t1.test.js> as a example
+- create a test with extension .test.js
+- use apitest function from <./test/api/apitest.js>
+
 
 ## Problems need take care
 

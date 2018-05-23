@@ -6,12 +6,12 @@ import fs from 'fs';
 const router = express.Router();
 
 router.get('/e1', (req, res, next) => {
-  log.debug('ttt request ....%s', JSON.stringify(req.body));
+  log.debug('e1 request ....%s', JSON.stringify(req.body));
   res.json({ ok: true }).end();
 });
 
 router.post('/e2', (req, res, next) => {
-  log.debug('ttt request ....%s', JSON.stringify(req.body));
+  log.debug('e2 request ....%s', JSON.stringify(req.body));
   res.json({ ok: true }).end();
 });
 

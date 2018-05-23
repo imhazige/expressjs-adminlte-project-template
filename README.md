@@ -103,6 +103,7 @@ fetch(url)
 ```
 
 ### Unit Test
+run `yarn run test` will run all the test script with file extension `.test.js`
 
 ###$ API Test
 see <./test/api/t1.test.js> as a example

@@ -100,7 +100,7 @@ const config = {
             ],
             // Experimental ECMAScript proposals
             // https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-
-            '@babel/preset-stage-2',
+            ['@babel/preset-stage-2', { decoratorsLegacy: true }],
             // Flow
             // https://github.com/babel/babel/tree/master/packages/babel-preset-flow
             '@babel/preset-flow',
@@ -307,7 +307,7 @@ const clientConfig = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      'window.$': 'jquery'
+      'window.$': 'jquery',
     }),
     // Define free variables
     // https://webpack.js.org/plugins/define-plugin/

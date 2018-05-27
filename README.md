@@ -25,6 +25,11 @@ release run `yarn start -- --release`
 
 build run `yarn run build -- --release`, then `node build/server.js`
 
+### deploy to heroku
+- run `yarn run build release` and add the build folder to git
+- make sure yarn.lock did not added to the git
+- push to heroku
+
 ### note:
 - the config PORT only work for built running like `node build/server.js`
 
@@ -110,6 +115,10 @@ see <./test/api/t1.test.js> as a example
 - create a test with extension .test.js
 - use apitest function from <./test/api/apitest.js>
 
+### Single script test using babel-node
+Add script in package.json
+`"rone": "babel-node"`
+Then at the root folder of the project, run `yarn rone <path-to-script>`
 
 ## Problems need take care
 

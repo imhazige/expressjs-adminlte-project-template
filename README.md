@@ -151,6 +151,21 @@ if you want load different resource.
 ### decoratorsLegacy problem
 look into this pull, https://github.com/kriasoft/react-starter-kit/pull/1608/files, add these two lines to coresponding code if you encountered these problem.
 
+### client javascript library import made error in the phase of server side render
+- error like `document is not defined`
+use `import ` on the top of the code will cause import in server side render phase, to solve it, use client side require in the client code
+example:
+```javascript
+
+  componentDidMount = () => {
+    //import echarts when component loaded
+    const echarts = require('echarts');
+    ...
+  }
+```
+
+
+
 
 
 

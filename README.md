@@ -109,6 +109,7 @@ fetch(url)
 
 ### Unit Test
 run `yarn run test` will run all the test script with file extension `.test.js`
+run `yarn run test <path-to-xxx.test.js>` will run the one test script
 
 ###$ API Test
 see <./test/api/t1.test.js> as a example
@@ -163,6 +164,17 @@ example:
     ...
   }
 ```
+
+### can not use variable for require function
+it require to use defined string when invoke require, also `__dirname` will be the build folder instead, do not rely on it.
+```javascript
+const s = '../model'
+var model = require(s).default; //error
+var model = require('../model').default //correct
+`
+
+### Invalid Option: 'true' is not a valid value for 'targets.forceAllTransforms'
+refer to the [issue](https://github.com/kriasoft/react-starter-kit/issues/1626)
 
 
 

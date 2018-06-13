@@ -91,8 +91,8 @@ const config = {
               {
                 targets: {
                   browsers: pkg.browserslist,
-                  forceAllTransforms: !isDebug, // for UglifyJS
                 },
+                forceAllTransforms: !isDebug, // for UglifyJS see https://github.com/kriasoft/react-starter-kit/issues/1626
                 modules: false,
                 useBuiltIns: false,
                 debug: false,

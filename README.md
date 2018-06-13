@@ -171,7 +171,7 @@ it require to use defined string when invoke require, also `__dirname` will be t
 const s = '../model'
 var model = require(s).default; //error
 var model = require('../model').default //correct
-`
+```
 
 ### Invalid Option: 'true' is not a valid value for 'targets.forceAllTransforms'
 refer to the [issue](https://github.com/kriasoft/react-starter-kit/issues/1626)
